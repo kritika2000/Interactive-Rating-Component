@@ -1,0 +1,95 @@
+@import url(https://fonts.google.com/specimen/Overpass);
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+h1{
+    margin-bottom: 0;
+    color: whitesmoke;
+}
+.outerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container, .thankYouContainer{
+    background-color:  hsl(215, 22%, 15%);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p{
+    margin: 0;
+    color: hsl(217, 12%, 63%);
+    font-size: 13px;
+    text-align: justify;
+}
+.starImage{
+    background-image: url('./images/icon-star.svg');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(149, 156, 166, 0.1);
+    border-radius: 20px;
+    /* background-size: contain; */
+    background-position: center;
+}
+.ratingContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.ratingContainer div{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(149, 156, 166, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 12px;
+}
+.ratingContainer div.selected{
+    background-color: rgba(199, 93, 18, 0.8);
+}
+button{
+    height: 45px;
+    border-radius: 20px;
+    color: rgba(199, 93, 18, 0.8);
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+}
+.thankYouContainer{
+   display: none;
+   align-items: center;
+   justify-content: space-evenly;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.thankYouContainer div:nth-of-type(1){
+    color: rgba(199, 93, 18, 0.8);
+    background-color: rgba(149, 156, 166, 0.1);
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.thankYouContainer div:nth-of-type(2){
+    color:whitesmoke;
+    font-size: 25px;
+    font-weight: 550;
+}
+.thankYouContainer p {
+    text-align: center;
+}
